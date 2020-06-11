@@ -1,0 +1,23 @@
+header {
+   background-color:#F5F5F5;
+   text-align:center;
+}
+
+.main-nav li {
+   display: block;
+   padding: 0.5rem;
+   border: lightgray solid 1px;
+   margin: 0.5rem;
+}
+
+a:link {
+   text-decoration: none;
+}
+
+img {
+   width: 55%;
+   height: auto;
+ }
+.col {
+   text-align: center;
+}
