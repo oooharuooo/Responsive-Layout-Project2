@@ -4,16 +4,16 @@
 /* Mobile layout */
 
 /* Header Section */
-h1.name{
-   padding-top:1.5rem;
-}
 body {
    font-family: 'Source Sans Pro', sans-serif;
 }
-
+h1.name{
+   padding-top:1.5rem;
+}
 .head {
    background-color:#F5F5F5;
    text-align:center;
+   padding-top: 1.3rem;
 }
 
 .main-nav li {
@@ -29,7 +29,11 @@ body {
 }
 a:link {
    text-decoration: none;
-   color: black;
+   color: rgb(46, 42, 42)
+   font-weight: bolder;
+}
+a:visited {
+   color: rgb(46, 42, 42);
    font-weight: bolder;
 }
 
@@ -46,54 +50,147 @@ a:link {
    max-width: 100%;
    margin-top: 1.75rem;
  }
-.col {
+.centerMobile {
    text-align: center;
    padding: 1.5rem
 }
 
 /* Footer Section */
-.foot {
+.contact {
    background-color:#F5F5F5;
    text-align:center;
-   padding-bottom: 2rem;
-   padding-top:2rem;
+   padding: 1.5rem 0;
+   
 }
 
-.foot-nav li {
+.information li {
    display: block ;
    margin: 0.5rem;
    
 }
-.foot-nav {
+.information {
    padding-left:0;
 }
-.pPadding {
-   padding: 0 2rem;
-}
-.colorOfFoot {
+.colorOfText {
    color: darkred;
+   padding-left:0.8rem;
 }
 
 .phone,
 .email {
    font-weight: bolder
 }
-
 #line{
    width: 98%;
    border-color: aliceblue;
+}
+.fly{
+   padding: 0 20px 10px 0;
+
 }
 .lastSection li {
    display: inline;
    text-decoration: none;
    font-weight: bolder;
+   
 }
-#leftside {
+.leftSide {
    float:left;
 }
-#rightside {
+.rightSide {
    float: right;
 }
+#largeRight {
+   display:none;
+}
+
+
+/* 768 Display */
+@media (min-width:768px) {
+   .main-nav li {
+      display: inline-block;
+      border:none;
+   }
+   .Personal {
+      position: relative;
+      padding: 5rem;
+   }
+   .aboutMe{
+      position: absolute;
+      left: 2.5rem;
+      bottom:2rem;
+      width: 55%;
+      font-size: 1.5rem;
+   }
+   .profileImg {
+      position: absolute;
+      width: 30%;
+      bottom: 2rem;
+      right: 2.5rem;
+   }
+
+   .row {
+      float: left;
+      width: 50%;
+      padding: 10px;
+   }
+   .row p {
+      width: 85%;
+      text-align: center;
+      padding-left: 2rem;
+   }
+
+   .colorOfText {
+      font-size:1.5rem;
+   
+   }
+   #hide {
+      display:none;
+   }
+   #largeRight{
+      display:inline;
+      margin-right: 3rem;
+   }
+}
+
+
+/* 1024 Display */
+@media (min-width: 1024px) {
+   .head {
+      position:relative;
+      padding: 5rem 0;
+   }
+   .name {
+      position:absolute;
+      top:0;
+      left: 4rem;
+   }
+   .main-nav {
+      position: absolute;
+      top:0;
+      right:0;
+   }
+   .profileImg {
+      position: absolute;
+      top:-1rem;
+      right: 3rem;
+   }
+   .aboutMe {
+      position: absolute;
+      left:2rem;
+      bottom:0;
+   }
+   .row {
+      float: left;
+      width: 33%;
+      padding: 10px;
+   }
+   p.colorOfText{
+      padding-left: 10rem;
+      padding-right: 10rem;
+   }
+}
+
 /* Clearfix */
 
 .clearfix::after {

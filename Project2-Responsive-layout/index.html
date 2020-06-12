@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
     <title>Responsive-Layout-Project2</title>
 </head>
 <body>
    <header class="head">
-    <div class="container">
+    <div class="container clearfix">
         <h1 class="name"><a href="#">Dat's Project 2</a></h1>
             <nav>
                 <ul class="main-nav">
@@ -19,73 +20,83 @@
                     <li><a href="#">SKILLS</a></li>
                 </ul>
             </nav>
-        <section class="Personal">    
+        <div class="Personal clearfix">    
             <img class="profileImg" src="images/responsive-layout-profile.png" alt="Profile's picture">
-            <p class="aboutMe">Hi! I'm Dat, a front-end developer.I love design and programming. My goal is to make a fully responsive website.</p>
-        </section>   
+            <p class="aboutMe ">Hi! I'm Dat, a front-end developer. I love design and programming. My goal is to make a fully responsive website.</p>
+        </div>   
     </div>
    </header>
 
-   <main class="col">
-    <h2>PORTFOLIO</h2>
-    
-    <div class="container">
-        <section >
+   <main class="centerMobile clearfix">
+    <div> 
+        <h2 id="portfolio">PORTFOLIO</h2>
+    </div>  
+    <div class="container  ">
+        <section class ="row">
             <img src="images/portfolio-1.png" alt="Marketing">
             <h3>Marketing Page</h3>
             <p>This project shows the front page of a marketing meant for a specific business I'm interested in.</p>
         </section>
         
-        <section>
+        <section class ="row">
             <img src="images/portfolio-2.png" alt="Search"/>
             <h3>Search Page</h3>
             <p>This project searches through a specific database to find information that the user is trying to look up.</p>
         </section>
 
-        <section>
+        <section class ="row">
             <img src="images/portfolio-3.png" alt="Travel"/>
             <h3>Travel App</h3>
             <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
         </section>
 
-        <section>
+        <section class ="row">
             <img src="images/portfolio-4.png" alt="Map"/>
             <h3>Map of Favorite Spots</h3>
             <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
         </section>
 
-        <section>
+        <section class ="row">
             <img src="images/portfolio-5.png" alt="Gallery"/>
             <h3>Photo Gallery</h3>
             <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
         </section>
 
-        <section>
+        <section class ="row">
             <img src="images/portfolio-6.png" alt="Calculator"/>
             <h3>Calculator</h3>
             <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
         </section>
-    </div>
+    </div> 
    </main>
 
-   <footer class="foot">
-    <h2>CONTACT</h2>
-        <p class ="colorOfFoot pPadding">If you want more information about what I'm working on, feel free to contact the information below.</p>
-        <nav>
-            <ul class="foot-nav colorOfFoot">
-                <li>Phone &nbsp &nbsp <span class ="phone">+999 999 999</span></li>
-                <li>Email &nbsp &nbsp <span class ="email">Sample@gmail.com</span></li>   
-            </ul>
-        </nav>
-    <hr id="line">
-        <section>
+
+
+   <footer >
+    <div class="contact">
+        <h2>CONTACT</h2>
+            <p class ="colorOfText">If you want more information about what I'm working on, feel free to contact the information below.</p>
             <nav>
-                <ul class ="lastSection" >
-                    <li id="leftside"><a href="#"></a>Dat</li>
-                    <li id = "rightside"><a href="#"></a>Back to Top</li>
+                <ul class="information colorOfText">
+                    <li>Phone &nbsp; &nbsp; <span class ="phone">+999 999 999</span></li>
+                    <li>Email &nbsp; &nbsp; <a href="mailto:Sample@gmail.com" target="_blank"> <span class ="email">Sample@gmail.com</span></a></li>   
                 </ul>
             </nav>
-        </section>
+        <hr id="line">
+    
+        <div class="contact fly"> 
+            <nav >
+                <ul class ="lastSection" >
+                    <li class ="leftSide"><a href="#"></a>Dat</li>
+                    <li class ="rightSide" id ="hide"><a href="#"></a>Back to Top</li>
+                    <li class ="rightSide" id ="largeRight"><a href="#"></a>Contact</li>
+                    <li class ="rightSide" id ="largeRight"><a href="#"></a>Portfolio</li>
+                    <li class ="rightSide" id ="largeRight" ><a href="#"></a>Home</li>
+                </ul>
+            </nav>
+        </div>
+    </div >    
    </footer>
+   
 </body>
 </html>
