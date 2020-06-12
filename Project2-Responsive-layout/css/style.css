@@ -1,23 +1,103 @@
-header {
+* {
+   box-sizing: border-box;
+}
+/* Mobile layout */
+
+/* Header Section */
+h1.name{
+   padding-top:1.5rem;
+}
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.head {
    background-color:#F5F5F5;
    text-align:center;
 }
 
 .main-nav li {
-   display: block;
-   padding: 0.5rem;
+   display: block ;
+   padding: 10px ;
    border: lightgray solid 1px;
    margin: 0.5rem;
+   float: center;
 }
 
+.main-nav {
+   padding: 0;
+}
 a:link {
    text-decoration: none;
+   color: black;
+   font-weight: bolder;
 }
 
-img {
-   width: 55%;
-   height: auto;
+.profileImg { 
+   width: 70%;
+}
+.aboutMe {
+  color: darkred;
+  padding: 1rem;
+}
+
+/* Main section */
+.container img {
+   max-width: 100%;
+   margin-top: 1.75rem;
  }
 .col {
    text-align: center;
+   padding: 1.5rem
 }
+
+/* Footer Section */
+.foot {
+   background-color:#F5F5F5;
+   text-align:center;
+   padding-bottom: 2rem;
+   padding-top:2rem;
+}
+
+.foot-nav li {
+   display: block ;
+   margin: 0.5rem;
+   
+}
+.foot-nav {
+   padding-left:0;
+}
+.pPadding {
+   padding: 0 2rem;
+}
+.colorOfFoot {
+   color: darkred;
+}
+
+.phone,
+.email {
+   font-weight: bolder
+}
+
+#line{
+   width: 98%;
+   border-color: aliceblue;
+}
+.lastSection li {
+   display: inline;
+   text-decoration: none;
+   font-weight: bolder;
+}
+#leftside {
+   float:left;
+}
+#rightside {
+   float: right;
+}
+/* Clearfix */
+
+.clearfix::after {
+   content: "";
+   clear: both;
+   display: table;
+ }
