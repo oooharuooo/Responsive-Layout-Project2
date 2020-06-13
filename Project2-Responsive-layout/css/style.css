@@ -8,7 +8,7 @@ body {
    font-family: 'Source Sans Pro', sans-serif;
 }
 h1.name{
-   padding-top:1.5rem;
+   font-weight: bolder;
 }
 .head {
    background-color:#F5F5F5;
@@ -21,7 +21,7 @@ h1.name{
    padding: 10px ;
    border: lightgray solid 1px;
    margin: 0.5rem;
-   float: center;
+  
 }
 
 .main-nav {
@@ -29,14 +29,16 @@ h1.name{
 }
 a:link {
    text-decoration: none;
-   color: rgb(46, 42, 42)
+   color: rgb(46, 42, 42);
    font-weight: bolder;
 }
 a:visited {
    color: rgb(46, 42, 42);
    font-weight: bolder;
 }
-
+a:any-link {
+   color: rgb(46, 42, 42)
+ }
 .profileImg { 
    width: 70%;
 }
@@ -99,7 +101,9 @@ a:visited {
 .rightSide {
    float: right;
 }
-#largeRight {
+#bigContact,
+#bigPortfolio,
+#bigHome {
    display:none;
 }
 
@@ -146,7 +150,9 @@ a:visited {
    #hide {
       display:none;
    }
-   #largeRight{
+   #bigContact,
+   #bigPortfolio,
+   #bigHome {
       display:inline;
       margin-right: 3rem;
    }
@@ -162,7 +168,7 @@ a:visited {
    .name {
       position:absolute;
       top:0;
-      left: 4rem;
+      left: 2rem;
    }
    .main-nav {
       position: absolute;
